@@ -105,7 +105,7 @@ class UserProfileViewSet(viewsets.ModelViewSet):
     permission_classes = (permissions.UpdateOwnProfile,)
     filter_backends = (filters.SearchFilter,)
     search_fields = ('name', 'email',)
-    
+
 
 class UserLoginAPiView(ObtainAuthToken):
     """Handlecreating User authentication tokens"""
